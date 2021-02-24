@@ -2,7 +2,7 @@
   // ns-params:@params
   var slides = {highlight_style: "dracula", theme: "black"};
 
-  // ns-hugo:/var/folders/nz/n0910n6j189gp4jr15hml9m00000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/wowchemy/wowchemy-hugo-modules/wowchemy@v0.0.0-20210219133516-05c772f38946/assets/js/wowchemy-utils.js
+  // ns-hugo:/var/folders/vf/tsk5p08d4y1dk5w_2vvj63z40000gq/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/wowchemy/wowchemy-hugo-modules/wowchemy@v0.0.0-20210219133516-05c772f38946/assets/js/wowchemy-utils.js
   function fixMermaid() {
     let mermaids = [];
     [].push.apply(mermaids, document.getElementsByClassName("language-mermaid"));
@@ -84,7 +84,7 @@
     slides.diagram = false;
   }
   if (slides.diagram) {
-    mermaidOptions = {};
+    var mermaidOptions = {};
     if (typeof slides.diagram_options !== "undefined") {
       mermaidOptions = slides.diagram_options;
     }
@@ -94,5 +94,4 @@
       fixMermaid();
     });
   }
-  var mermaidOptions;
 })();
